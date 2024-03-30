@@ -49,6 +49,7 @@ header {
 .logo {
     width: 90px;
     height: 40px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,10 +66,44 @@ header {
     right: 5px;
 }
 
-.main__right-block {background-color: brown;}
-.main__news-block {background-color: red;}
-.news-section-left {background-color: orange;}
-.news-section-right {background-color: yellow;}
-.news-photo-1 {background-color: green;}
-.news-photo-2 {background-color: lightgreen;}
-.news-photo-3 {background-color: greenyellow;}
+.read {
+    text-decoration: none;
+    color: rgb(62, 130, 255);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+.read:hover {
+    color: rgb(98, 152, 253);
+}
+
+.other-currencies {
+    text-decoration: none;
+    color: rgb(62, 130, 255);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+.other-currencies:hover {
+    color: rgb(98, 152, 253);
+    transform: translate(10px, 0px);
+    transition: 0.5s;
+}
+
+#pointing {
+    text-decoration: none;
+    color: rgb(62, 130, 255);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s;
+    position: relative;
+    left: 7px;
+} 
