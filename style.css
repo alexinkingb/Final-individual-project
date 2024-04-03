@@ -10,22 +10,21 @@ header {
 
 .navigation {
     display: flex;
-    align-items: center;
     flex-direction: row;
     height: 65px;
+    justify-content: center;
 }
 
 .navigation-choice {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0;
     flex-grow: 1;
-    list-style-type: none;
+    justify-content: space-evenly;
 }
 
 .nav-links {
-    justify-content: space-evenly;
-    flex-direction: row;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -49,7 +48,6 @@ header {
 .logo {
     width: 90px;
     height: 40px;
-    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +62,7 @@ header {
     width: 94px;
     height: 42px;
     right: 5px;
+    transition: 0.2s;
 }
 
 .read {
@@ -78,6 +77,7 @@ header {
 
 .read:hover {
     color: rgb(98, 152, 253);
+    transition: 0.5s;
 }
 
 .other-currencies {
@@ -107,3 +107,69 @@ header {
     position: relative;
     left: 7px;
 } 
+
+.main-info {
+    width: 100%;
+    height: 700px;
+    justify-content: space-evenly;
+    background-color: rgb(118, 189, 255);
+}
+
+.news-photo-1 {
+    width: 250px;
+    height: 120px;
+    background-color: aqua;
+}
+
+.news-photo-2 {
+    width: 250px;
+    height: 120px;
+    background-color: aqua;
+}
+
+.news-photo-3 {
+    width: 250px;
+    height: 120px;
+    background-color: aqua;
+}
+
+.news-text__desc-1 {
+    width: 250px;
+    height: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.news-text__desc-2 {
+    width: 200px;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.news-text__desc-3 {
+    width: 200px;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#read-right {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.currency-symbol {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.main__right-block {
+    width: 500px;
+    height: 500px;
+}
