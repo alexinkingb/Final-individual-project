@@ -8,20 +8,22 @@ header {
     background-color: rgb(24, 77, 250);
 }
 
+@blue: rgb(118, 189, 255);
+
+main {background-color: @blue;}
+footer {background-color: @blue;}
+
 .navigation {
-    display: flex;
     flex-direction: row;
-    height: 65px;
-    justify-content: center;
+    height: 80px;
+    justify-content: space-evenly;
 }
 
 .navigation-choice {
-    width: 100%;
     display: flex;
     align-items: center;
-    padding: 0;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    margin-left: 25px;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -35,6 +37,7 @@ header {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 25px;
     text-decoration: none;
     color: rgb(152, 188, 255);
     transition: 0.5s;
@@ -48,14 +51,12 @@ header {
 .logo {
     width: 90px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     left: 10px;
+    top: 16px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .logo:hover {
@@ -65,18 +66,31 @@ header {
     transition: 0.2s;
 }
 
+.news-section-left {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.news-section-right {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .read {
     text-decoration: none;
     color: rgb(62, 130, 255);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 25px;
     font-style: normal;
     transition: 0.5s;
 }
 
 .read:hover {
-    color: rgb(98, 152, 253);
+    color: rgb(0, 255, 0);
     transition: 0.5s;
 }
 
@@ -88,6 +102,8 @@ header {
     font-weight: 400;
     font-style: normal;
     transition: 0.5s;
+    position: relative;
+    justify-content: center;
 }
 
 .other-currencies:hover {
@@ -110,53 +126,62 @@ header {
 
 .main-info {
     width: 100%;
-    height: 700px;
+    height: 100%;
     justify-content: space-evenly;
-    background-color: rgb(118, 189, 255);
+    padding-top: 20px;
+}
+
+.it-is-for__news-photo {
+    width: 400px;
+    height: 250px;
+    background-color: aqua;
 }
 
 .news-photo-1 {
-    width: 250px;
-    height: 120px;
-    background-color: aqua;
+    .it-is-for__news-photo;
 }
-
 .news-photo-2 {
-    width: 250px;
-    height: 120px;
-    background-color: aqua;
+    .it-is-for__news-photo;
+}
+.news-photo-3 {
+    .it-is-for__news-photo;
 }
 
-.news-photo-3 {
-    width: 250px;
-    height: 120px;
-    background-color: aqua;
+.it-is-for__news-text__desc {
+    width: 200px;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .news-text__desc-1 {
-    width: 250px;
-    height: 120px;
-    margin-left: 5px;
-    margin-right: 5px;
+    .it-is-for__news-text__desc;
 }
-
 .news-text__desc-2 {
-    width: 200px;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;
+    .it-is-for__news-text__desc;
 }
-
 .news-text__desc-3 {
-    width: 200px;
-    height: 70px;
-    margin-left: 5px;
-    margin-right: 5px;
+    .it-is-for__news-text__desc;
 }
 
 #read-right {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.it-is-for__currencies {
+    position: relative;
+    justify-content: center;
+}
+
+.dollar {
+    .it-is-for__currencies;
+}
+.euro {
+    .it-is-for__currencies;
+}
+.yuan {
+    .it-is-for__currencies;
 }
 
 .currency-symbol {
@@ -169,7 +194,44 @@ header {
     font-size: 40px;
 }
 
+.exchange {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 45px;
+}
+
+.it-is-for__titles {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.title {
+    .it-is-for__titles;
+    margin-bottom: 10px;
+}
+
+.title-of-the-news {
+    .it-is-for__titles;
+    margin-bottom: 45px;
+}
+
 .main__right-block {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 100%;
+}
+
+.main__news-block {
+    height: 100%;
+    background-color: azure;
 }

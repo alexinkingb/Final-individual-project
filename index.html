@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <div class="navigation d-flex">
             <a href=""><img src="img/coin.png" class="logo"></a>
             <ul class="navigation-choice">
                 <li class="nav-links"> <a href="#" class="nav-links__text">Об авторах</a> </li>
@@ -22,12 +22,17 @@
                 <li class="nav-links"> <a href="#" class="nav-links__text">Поддержать</a> </li>
                 <li class="nav-links"> <a href="#" class="nav-links__text">Мы в соцсетях</a> </li>
             </ul>
-        </nav>
+        </div>
     </header>
     
     <main class="main">
         <div class="main-info d-flex">   
+            
             <div class="main__news-block">
+                <p class="title-of-the-news">
+                    Новости финансов в этот день
+                </p>
+                
                 <div class="news-section-left d-flex">
                     <img src="" alt="" class="news-photo-1">
                     <div class="news-text d-flex">
@@ -52,18 +57,26 @@
                     </div>
                 </div>
             </div>
+            
             <div class="main__right-block">
+                <p class="title">
+                    Курсы иностранных валют на 06.04.2024
+                </p>
+                
                 <div class="currency-and-percent">
                     <div class="dollar d-flex">
-                        <p class="currency-symbol">$   92,53</p>
+                        <p class="currency-symbol">$ - </p>
+                        <p class="exchange">92,53</p>
                     </div>
                             
                     <div class="euro d-flex">    
-                        <p class="currency-symbol">€   99,41</p>
+                        <p class="currency-symbol">€ - </p>
+                        <p class="exchange">99,41</p>
                     </div>
                             
                     <div class="yuan d-flex">
-                        <p class="currency-symbol">¥   12,72</p>
+                        <p class="currency-symbol">¥ - </p>
+                        <p class="exchange">12,72</p>
                     </div>
 
                     <a href="#" class="other-currencies d-flex">
@@ -71,8 +84,43 @@
                         <div id="pointing"><p>🠊</p></div>
                     </a>
                 </div>
+                
+                <p class="title">
+                    Лекции
+                </p>
+                
                 <div class="lections-and-courses">
+                    <div class="lection">
+                        <img src="" alt="" class="lection__image">
+                        <p class="lection__title">
+
+                        </p>
+                        <a href="#" class="lection__read">🠊</a>
+                    </div>
                     
+                    <div class="lection">
+                        <img src="" alt="" class="lection__image">
+                        <p class="lection__title">
+
+                        </p>
+                        <a href="#" class="lection__read">🠊</a>
+                    </div>
+                    
+                    <div class="lection">
+                        <img src="" alt="" class="lection__image">
+                        <p class="lection__title">
+
+                        </p>
+                        <a href="#" class="lection__read">🠊</a>
+                    </div>
+                    
+                    <div class="lection">
+                        <img src="" alt="" class="lection__image">
+                        <p class="lection__title">
+
+                        </p>
+                        <a href="#" class="lection__read">🠊</a>
+                    </div>
                 </div>
             </div>
         </div> 
