@@ -190,14 +190,12 @@
     height: 70px;
     margin-left: 5px;
     margin-right: 5px;
-    color: black;
 }
 .it-is-for__news-text__desc-dark {
     width: 200px;
     height: 70px;
     margin-left: 5px;
     margin-right: 5px;
-    color: white;
 }
 
 .news-text__desc-1 {
@@ -214,13 +212,16 @@
 }
 
 .news-text__desc-1-dark {
-    .it-is-for__news-text__desc-dark;
+    .it-is-for__news-text__desc;
+    .smaller-title-dark;
 }
 .news-text__desc-2-dark {
-    .it-is-for__news-text__desc-dark;
+    .it-is-for__news-text__desc;
+    .smaller-title-dark;
 }
 .news-text__desc-3-dark {
-    .it-is-for__news-text__desc-dark;
+    .it-is-for__news-text__desc;
+    .smaller-title-dark;
 }
 
 #read-right {
@@ -324,7 +325,7 @@
 }
 .main__news-block-dark {
     height: 100%;
-    background-color: rgb(107, 112, 112);
+    background-color: rgb(162, 173, 173);
 }
 
 .about-the-authors {
@@ -337,7 +338,7 @@
 .about-the-authors-dark {
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(107, 112, 112);
+    background-color: rgb(162, 173, 173);
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -372,9 +373,19 @@
     height: 100%;
 }
 
-.lection__title p {
+.lection__title-text {
     text-decoration: none;
     color: rgb(0, 47, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+// !!!!!!!! DARK
+.lection__title-text-dark {
+    text-decoration: none;
+    color: rgb(67, 163, 253);
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -393,7 +404,16 @@
 
 .smaller-title {
     text-decoration: none;
-    color: black;
+    text-emphasis-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.smaller-title-dark {
+    text-decoration: none;
+    text-emphasis-color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
