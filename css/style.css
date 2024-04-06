@@ -3,11 +3,17 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #184dfa;
+}
+.header-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0f2f97;
 }
 .footer {
   background-color: black;
@@ -164,6 +170,16 @@ header {
   padding-bottom: 30px;
   background-color: #76bdff;
 }
+.main-info-dark {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #006ed4;
+}
 .it-is-for__news-photo {
   width: 400px;
   height: 250px;
@@ -185,6 +201,14 @@ header {
   height: 70px;
   margin-left: 5px;
   margin-right: 5px;
+  color: black;
+}
+.it-is-for__news-text__desc-dark {
+  width: 200px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
 }
 .news-text__desc-1 {
   width: 200px;
@@ -221,6 +245,27 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+}
+.news-text__desc-1-dark {
+  width: 200px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.news-text__desc-2-dark {
+  width: 200px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.news-text__desc-3-dark {
+  width: 200px;
+  height: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
 }
 #read-right {
   margin-left: 5px;
@@ -338,6 +383,10 @@ header {
   height: 100%;
   background-color: azure;
 }
+.main__news-block-dark {
+  height: 100%;
+  background-color: #6b7070;
+}
 .about-the-authors {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -347,6 +396,18 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: azure;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.about-the-authors-dark {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #6b7070;
   padding-top: 20px;
   padding-bottom: 50px;
 }
@@ -428,7 +489,7 @@ header {
   height: 75px;
   padding-top: 12px;
   padding-bottom: 9px;
-  border-bottom: 1px solid #002fff;
+  border-bottom: 1px solid #0026ce;
 }
 .lection__no-border {
   -ms-flex-pack: distribute;
