@@ -9,8 +9,10 @@ header {
   display: flex;
   background-color: #184dfa;
 }
-footer {
+.footer {
   background-color: black;
+  height: 100px;
+  width: 100%;
 }
 .navigation {
   -webkit-box-orient: horizontal;
@@ -67,12 +69,30 @@ footer {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.logo-1 {
+  width: 120px;
+  height: 60px;
+  position: relative;
+  left: 7px;
+  top: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .logo:hover {
   width: 94px;
   height: 42px;
   right: 5px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.logo-1:hover {
+  width: 124px;
+  height: 62px;
+  right: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .news-section-left {
   margin-bottom: 15px;
@@ -147,22 +167,18 @@ footer {
 .it-is-for__news-photo {
   width: 400px;
   height: 250px;
-  background-color: aqua;
 }
 .news-photo-1 {
   width: 400px;
   height: 250px;
-  background-color: aqua;
 }
 .news-photo-2 {
   width: 400px;
   height: 250px;
-  background-color: aqua;
 }
 .news-photo-3 {
   width: 400px;
   height: 250px;
-  background-color: aqua;
 }
 .it-is-for__news-text__desc {
   width: 200px;
@@ -332,7 +348,7 @@ footer {
           flex-direction: column;
   background-color: azure;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .person {
   width: 350px;
@@ -427,4 +443,30 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 20px;
+}
+.phone-number {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+}
+.footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.copyright {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
 }

@@ -10,7 +10,11 @@ header {
 
 @blue: rgb(118, 189, 255);
 
-footer {background-color: black;}
+.footer {
+    background-color: black; 
+    height: 100px; 
+    width: 100%;
+}
 
 .navigation {
     flex-direction: row;
@@ -58,11 +62,30 @@ footer {background-color: black;}
     transition: 0.3s;
 }
 
+.logo-1 {
+    width: 120px;
+    height: 60px;
+    position: relative;
+    left: 7px;
+    top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 .logo:hover {
     width: 94px;
     height: 42px;
     right: 5px;
-    transition: 0.2s;
+    transition: 0.3s;
+}
+
+
+.logo-1:hover {
+    width: 124px;
+    height: 62px;
+    right: 5px;
+    transition: 0.3s;
 }
 
 .news-section-left {
@@ -136,7 +159,6 @@ footer {background-color: black;}
 .it-is-for__news-photo {
     width: 400px;
     height: 250px;
-    background-color: aqua;
 }
 
 .news-photo-1 {
@@ -275,7 +297,7 @@ footer {background-color: black;}
     flex-direction: column;
     background-color: azure;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .person {
@@ -361,4 +383,29 @@ footer {background-color: black;}
 .authors {
     justify-content: space-evenly;
     padding-top: 20px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.footer {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
 }
