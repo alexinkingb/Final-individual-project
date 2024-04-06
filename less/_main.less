@@ -10,8 +10,7 @@ header {
 
 @blue: rgb(118, 189, 255);
 
-main {background-color: @blue;}
-footer {background-color: @blue;}
+footer {background-color: black;}
 
 .navigation {
     flex-direction: row;
@@ -100,6 +99,7 @@ footer {background-color: @blue;}
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 20px;
     font-style: normal;
     transition: 0.5s;
     position: relative;
@@ -129,6 +129,8 @@ footer {background-color: @blue;}
     height: 100%;
     justify-content: space-evenly;
     padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: @blue;
 }
 
 .it-is-for__news-photo {
@@ -152,16 +154,20 @@ footer {background-color: @blue;}
     height: 70px;
     margin-left: 5px;
     margin-right: 5px;
+
 }
 
 .news-text__desc-1 {
     .it-is-for__news-text__desc;
+    .smaller-title;
 }
 .news-text__desc-2 {
     .it-is-for__news-text__desc;
+    .smaller-title;
 }
 .news-text__desc-3 {
     .it-is-for__news-text__desc;
+    .smaller-title;
 }
 
 #read-right {
@@ -213,25 +219,146 @@ footer {background-color: @blue;}
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
 }
 
 .title {
     .it-is-for__titles;
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
 .title-of-the-news {
     .it-is-for__titles;
     margin-bottom: 45px;
+    font-size: 40px;
+}
+
+.it-is-for__person {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-the-authors__title {
+    margin-bottom: 25px;
+}
+
+.about-the-authors__title p {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    .it-is-for__person;
+    font-size: 40px;
+}
+
+.about-the-authors__subtitle {
+    width: 50%;
+    height: 100px;
+    font-size: 25px;
+    .it-is-for__person;
+    position: relative;
+    left: 25%;
+    text-align: center;
 }
 
 .main__right-block {
-    width: 550px;
     height: 100%;
 }
-
 .main__news-block {
     height: 100%;
     background-color: azure;
+}
+
+.about-the-authors {
+    justify-content: center;
+    flex-direction: column;
+    background-color: azure;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.person {
+    width: 350px;
+    height: 550px;
+}
+
+.person__image {
+    width: 100%;
+    height: 250px;
+    border-radius: 15%;
+}
+
+.person p {
+    .it-is-for__person;
+    font-size: 20px;
+    text-align: center;
+}
+
+#p_1 {
+    margin-top: 20px;
+}
+
+.lections-and-courses {
+    margin-top: 10px;
+}
+
+.lection__title {
+    width: 60%;
+    height: 100%;
+}
+
+.lection__title p {
+    text-decoration: none;
+    color: rgb(0, 47, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.time {
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    border-radius: 15%;
+    background-color: azure;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.smaller-title {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.time span {
+    .smaller-title;
+    text-align: center;
+}
+
+.it-is-for__lections {
+    justify-content: space-around;
+    width: 85%;
+    height: 75px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+}
+
+.lection {
+    .it-is-for__lections;
+    border-bottom: 1px solid rgb(0, 47, 255);
+}
+
+.lection__no-border {
+    .it-is-for__lections;
+}
+
+.authors {
+    justify-content: space-evenly;
+    padding-top: 20px;
 }

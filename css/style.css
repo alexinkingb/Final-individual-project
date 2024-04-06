@@ -9,11 +9,8 @@ header {
   display: flex;
   background-color: #184dfa;
 }
-main {
-  background-color: #76bdff;
-}
 footer {
-  background-color: #76bdff;
+  background-color: black;
 }
 .navigation {
   -webkit-box-orient: horizontal;
@@ -109,6 +106,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 20px;
   font-style: normal;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -143,6 +141,8 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #76bdff;
 }
 .it-is-for__news-photo {
   width: 400px;
@@ -175,18 +175,36 @@ footer {
   height: 70px;
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 .news-text__desc-2 {
   width: 200px;
   height: 70px;
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 .news-text__desc-3 {
   width: 200px;
   height: 70px;
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 #read-right {
   margin-left: 5px;
@@ -243,7 +261,6 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
 }
 .title {
   text-align: center;
@@ -253,8 +270,8 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
   margin-bottom: 10px;
+  font-size: 40px;
 }
 .title-of-the-news {
   text-align: center;
@@ -264,14 +281,150 @@ footer {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
   margin-bottom: 45px;
+  font-size: 40px;
+}
+.it-is-for__person {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-the-authors__title {
+  margin-bottom: 25px;
+}
+.about-the-authors__title p {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.about-the-authors__subtitle {
+  width: 50%;
+  height: 100px;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  left: 25%;
+  text-align: center;
 }
 .main__right-block {
-  width: 550px;
   height: 100%;
 }
 .main__news-block {
   height: 100%;
   background-color: azure;
+}
+.about-the-authors {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: azure;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.person {
+  width: 350px;
+  height: 550px;
+}
+.person__image {
+  width: 100%;
+  height: 250px;
+  border-radius: 15%;
+}
+.person p {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+#p_1 {
+  margin-top: 20px;
+}
+.lections-and-courses {
+  margin-top: 10px;
+}
+.lection__title {
+  width: 60%;
+  height: 100%;
+}
+.lection__title p {
+  text-decoration: none;
+  color: #002fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.time {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 35px;
+  border-radius: 15%;
+  background-color: azure;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.smaller-title {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.time span {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+.it-is-for__lections {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85%;
+  height: 75px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+}
+.lection {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85%;
+  height: 75px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #002fff;
+}
+.lection__no-border {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 85%;
+  height: 75px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+}
+.authors {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
 }
